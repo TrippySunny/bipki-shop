@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Карточка абстрактной фигурки: описание, вкладки, таблица характеристик и заявка.">
+  <meta name="theme-color" content="#07110c">
+  <title>Фигурка — Бипки</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#content">К содержанию</a>
+  <header>
+    <nav class="navbar navbar-expand-xl site-nav sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/mark.svg" width="32" height="32" alt="">
+          <span>Бипки</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNav">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link active" href="product.html" aria-current="page">Фигурка</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О бипке</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="py-5">
+      <div class="container">
+        <nav aria-label="Хлебные крошки">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Фигурка</li>
+          </ol>
+        </nav>
+        <div class="product-stage">
+      <article class="product-detail" id="zero">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/zero.svg" alt="Нулевой объём">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"><span class="badge text-bg-success">Хит</span> <span class="badge text-bg-secondary">Пустые</span></p>
+            <h1 class="display-5 mb-3">Нулевой объём</h1>
+            <p class="lead hero-lead">Оболочка, у которой нет внутреннего объёма. Ноль в характеристиках — не ошибка склада.</p>
+            <p class="mb-4"><span class="product-price">4 900 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=zero">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="zero">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="zero-desc-tab" data-bs-toggle="tab" data-bs-target="#zero-desc" type="button" role="tab" aria-controls="zero-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="zero-delivery-tab" data-bs-toggle="tab" data-bs-target="#zero-delivery" type="button" role="tab" aria-controls="zero-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="zero-care-tab" data-bs-toggle="tab" data-bs-target="#zero-care" type="button" role="tab" aria-controls="zero-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="zero-desc" role="tabpanel" aria-labelledby="zero-desc-tab" tabindex="0">
+            <p class="mb-0">Фигурка собрана из трёх вложенных рамок. Они почти замыкаются и всё равно оставляют центр пустым. Так магазин представляет объект, который нельзя заполнить: у него нет места, куда можно было бы положить смысл.</p>
+          </div>
+          <div class="tab-pane fade" id="zero-delivery" role="tabpanel" aria-labelledby="zero-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Нулевой объём».</p>
+          </div>
+          <div class="tab-pane fade" id="zero-care" role="tabpanel" aria-labelledby="zero-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Нулевой объём»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Габарит</th><td>14 × 14 × 0 см</td></tr>
+                <tr><th scope="row">Масса</th><td>не определяется</td></tr>
+                <tr><th scope="row">Материал</th><td>литой полимер</td></tr>
+                <tr><th scope="row">Партия</th><td>11 штук</td></tr>
+                <tr><th scope="row">Что отсутствует</th><td>внутренний объём</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="product-detail" id="edge">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/edge.svg" alt="Ребро без грани">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"><span class="badge text-bg-warning">Новинка</span> <span class="badge text-bg-secondary">Рёбра</span></p>
+            <h1 class="display-5 mb-3">Ребро без грани</h1>
+            <p class="lead hero-lead">Одно ребро. Граней, к которым оно должно крепиться, в комплекте нет.</p>
+            <p class="mb-4"><span class="product-price">3 200 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=edge">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="edge">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="edge-desc-tab" data-bs-toggle="tab" data-bs-target="#edge-desc" type="button" role="tab" aria-controls="edge-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="edge-delivery-tab" data-bs-toggle="tab" data-bs-target="#edge-delivery" type="button" role="tab" aria-controls="edge-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="edge-care-tab" data-bs-toggle="tab" data-bs-target="#edge-care" type="button" role="tab" aria-controls="edge-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="edge-desc" role="tabpanel" aria-labelledby="edge-desc-tab" tabindex="0">
+            <p class="mb-0">Длинная кромка держит свет и больше ничего. Соседние плоскости в модель не вошли: если их добавить, фигурка начнёт изображать обычный предмет, а не бипку.</p>
+          </div>
+          <div class="tab-pane fade" id="edge-delivery" role="tabpanel" aria-labelledby="edge-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Ребро без грани».</p>
+          </div>
+          <div class="tab-pane fade" id="edge-care" role="tabpanel" aria-labelledby="edge-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Ребро без грани»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Длина ребра</th><td>18 см</td></tr>
+                <tr><th scope="row">Масса</th><td>240 г</td></tr>
+                <tr><th scope="row">Материал</th><td>окрашенный полимер</td></tr>
+                <tr><th scope="row">Партия</th><td>7 штук</td></tr>
+                <tr><th scope="row">Граней в комплекте</th><td>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="product-detail" id="fold">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/fold.svg" alt="Складка тишины">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"><span class="badge text-bg-danger">Скидка</span> <span class="badge text-bg-secondary">Замкнутые</span></p>
+            <h1 class="display-5 mb-3">Складка тишины</h1>
+            <p class="lead hero-lead">Поверхность сложена так, что с неё не считывается ни форма, ни звук.</p>
+            <p class="mb-4"><span class="product-price">2 700 ₽</span> <span class="text-decoration-line-through text-secondary ms-2">3 400 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=fold">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="fold">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="fold-desc-tab" data-bs-toggle="tab" data-bs-target="#fold-desc" type="button" role="tab" aria-controls="fold-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="fold-delivery-tab" data-bs-toggle="tab" data-bs-target="#fold-delivery" type="button" role="tab" aria-controls="fold-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="fold-care-tab" data-bs-toggle="tab" data-bs-target="#fold-care" type="button" role="tab" aria-controls="fold-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="fold-desc" role="tabpanel" aria-labelledby="fold-desc-tab" tabindex="0">
+            <p class="mb-0">Лента полимера перегнута трижды и сходится сама с собой. Скидка стоит потому, что прошлая партия тоже ничего не объяснила, а полка уже занята.</p>
+          </div>
+          <div class="tab-pane fade" id="fold-delivery" role="tabpanel" aria-labelledby="fold-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Складка тишины».</p>
+          </div>
+          <div class="tab-pane fade" id="fold-care" role="tabpanel" aria-labelledby="fold-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Складка тишины»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Габарит</th><td>16 × 9 × 7 см</td></tr>
+                <tr><th scope="row">Масса</th><td>310 г</td></tr>
+                <tr><th scope="row">Материал</th><td>гибкий полимер</td></tr>
+                <tr><th scope="row">Партия</th><td>20 штук</td></tr>
+                <tr><th scope="row">Складок</th><td>3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="product-detail" id="torus">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/torus.svg" alt="Невозможный тор">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"><span class="badge text-bg-info">Редкость</span> <span class="badge text-bg-secondary">Замкнутые</span></p>
+            <h1 class="display-5 mb-3">Невозможный тор</h1>
+            <p class="lead hero-lead">Кольцо проходит сквозь собственное отверстие и не замечает этого.</p>
+            <p class="mb-4"><span class="product-price">5 600 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=torus">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="torus">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="torus-desc-tab" data-bs-toggle="tab" data-bs-target="#torus-desc" type="button" role="tab" aria-controls="torus-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="torus-delivery-tab" data-bs-toggle="tab" data-bs-target="#torus-delivery" type="button" role="tab" aria-controls="torus-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="torus-care-tab" data-bs-toggle="tab" data-bs-target="#torus-care" type="button" role="tab" aria-controls="torus-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="torus-desc" role="tabpanel" aria-labelledby="torus-desc-tab" tabindex="0">
+            <p class="mb-0">Замкнутая поверхность без края. Её можно обойти взглядом и ни разу не понять, где у неё внешняя сторона. Форму трудно повторить, не сделав обычный бублик.</p>
+          </div>
+          <div class="tab-pane fade" id="torus-delivery" role="tabpanel" aria-labelledby="torus-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Невозможный тор».</p>
+          </div>
+          <div class="tab-pane fade" id="torus-care" role="tabpanel" aria-labelledby="torus-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Невозможный тор»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Внешний диаметр</th><td>19 см</td></tr>
+                <tr><th scope="row">Масса</th><td>480 г</td></tr>
+                <tr><th scope="row">Материал</th><td>полимер с лаком</td></tr>
+                <tr><th scope="row">Партия</th><td>4 штуки</td></tr>
+                <tr><th scope="row">Край</th><td>отсутствует</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="product-detail" id="point">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/point.svg" alt="Точка снаружи">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"> <span class="badge text-bg-secondary">Пустые</span></p>
+            <h1 class="display-5 mb-3">Точка снаружи</h1>
+            <p class="lead hero-lead">Точка относится к фигуре и лежит за её пределами.</p>
+            <p class="mb-4"><span class="product-price">1 800 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=point">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="point">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="point-desc-tab" data-bs-toggle="tab" data-bs-target="#point-desc" type="button" role="tab" aria-controls="point-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="point-delivery-tab" data-bs-toggle="tab" data-bs-target="#point-delivery" type="button" role="tab" aria-controls="point-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="point-care-tab" data-bs-toggle="tab" data-bs-target="#point-care" type="button" role="tab" aria-controls="point-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="point-desc" role="tabpanel" aria-labelledby="point-desc-tab" tabindex="0">
+            <p class="mb-0">Сфера на месте, точка — нет. Пунктир между ними обрывается: дорисовывать его было бы уже толкованием, а магазин толкований не продаёт.</p>
+          </div>
+          <div class="tab-pane fade" id="point-delivery" role="tabpanel" aria-labelledby="point-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Точка снаружи».</p>
+          </div>
+          <div class="tab-pane fade" id="point-care" role="tabpanel" aria-labelledby="point-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Точка снаружи»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Диаметр сферы</th><td>11 см</td></tr>
+                <tr><th scope="row">Масса</th><td>190 г</td></tr>
+                <tr><th scope="row">Материал</th><td>матовый полимер</td></tr>
+                <tr><th scope="row">Партия</th><td>15 штук</td></tr>
+                <tr><th scope="row">Где точка</th><td>вне фигуры</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="product-detail" id="void">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/void.svg" alt="Гладкая пустота">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"><span class="badge text-bg-success">Хит</span> <span class="badge text-bg-secondary">Пустые</span></p>
+            <h1 class="display-5 mb-3">Гладкая пустота</h1>
+            <p class="lead hero-lead">Ни ребра, ни шва. Ладонь соскальзывает, взгляд тоже.</p>
+            <p class="mb-4"><span class="product-price">6 100 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=void">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="void">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="void-desc-tab" data-bs-toggle="tab" data-bs-target="#void-desc" type="button" role="tab" aria-controls="void-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="void-delivery-tab" data-bs-toggle="tab" data-bs-target="#void-delivery" type="button" role="tab" aria-controls="void-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="void-care-tab" data-bs-toggle="tab" data-bs-target="#void-care" type="button" role="tab" aria-controls="void-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="void-desc" role="tabpanel" aria-labelledby="void-desc-tab" tabindex="0">
+            <p class="mb-0">Самая дорогая попытка в витрине, потому что на ней меньше всего за что зацепиться. Гладкий объём с дырой, которая не является входом.</p>
+          </div>
+          <div class="tab-pane fade" id="void-delivery" role="tabpanel" aria-labelledby="void-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Гладкая пустота».</p>
+          </div>
+          <div class="tab-pane fade" id="void-care" role="tabpanel" aria-labelledby="void-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Гладкая пустота»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Габарит</th><td>15 × 13 × 12 см</td></tr>
+                <tr><th scope="row">Масса</th><td>520 г</td></tr>
+                <tr><th scope="row">Материал</th><td>полированный полимер</td></tr>
+                <tr><th scope="row">Партия</th><td>6 штук</td></tr>
+                <tr><th scope="row">Шов</th><td>нет</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="product-detail" id="angle">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/angle.svg" alt="Угол, которого нет">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"><span class="badge text-bg-warning">Новинка</span> <span class="badge text-bg-secondary">Рёбра</span></p>
+            <h1 class="display-5 mb-3">Угол, которого нет</h1>
+            <p class="lead hero-lead">Три плоскости идут к одной точке и разминулись.</p>
+            <p class="mb-4"><span class="product-price">4 100 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=angle">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="angle">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="angle-desc-tab" data-bs-toggle="tab" data-bs-target="#angle-desc" type="button" role="tab" aria-controls="angle-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="angle-delivery-tab" data-bs-toggle="tab" data-bs-target="#angle-delivery" type="button" role="tab" aria-controls="angle-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="angle-care-tab" data-bs-toggle="tab" data-bs-target="#angle-care" type="button" role="tab" aria-controls="angle-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="angle-desc" role="tabpanel" aria-labelledby="angle-desc-tab" tabindex="0">
+            <p class="mb-0">В чертеже угол был. В отливке плоскости не встретились. Щель и есть фигура: бипка здесь — это место, где геометрия отказалась сходиться.</p>
+          </div>
+          <div class="tab-pane fade" id="angle-delivery" role="tabpanel" aria-labelledby="angle-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Угол, которого нет».</p>
+          </div>
+          <div class="tab-pane fade" id="angle-care" role="tabpanel" aria-labelledby="angle-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Угол, которого нет»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Габарит</th><td>17 × 12 × 10 см</td></tr>
+                <tr><th scope="row">Масса</th><td>360 г</td></tr>
+                <tr><th scope="row">Материал</th><td>окрашенный полимер</td></tr>
+                <tr><th scope="row">Партия</th><td>9 штук</td></tr>
+                <tr><th scope="row">Схождение плоскостей</th><td>не случилось</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="product-detail" id="contour">
+        <div class="row align-items-center gx-4 gy-4">
+          <div class="col-12 col-lg-6">
+            <div class="figure-frame">
+              <img src="images/contour.svg" alt="Контур без тела">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="mb-2"> <span class="badge text-bg-secondary">Рёбра</span></p>
+            <h1 class="display-5 mb-3">Контур без тела</h1>
+            <p class="lead hero-lead">Линия обводит предмет, который не стали заполнять.</p>
+            <p class="mb-4"><span class="product-price">2 400 ₽</span></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="order.html?product=contour">Оставить заявку</a>
+              <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="contour">Быстрый запрос</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs mt-5" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="contour-desc-tab" data-bs-toggle="tab" data-bs-target="#contour-desc" type="button" role="tab" aria-controls="contour-desc" aria-selected="true">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contour-delivery-tab" data-bs-toggle="tab" data-bs-target="#contour-delivery" type="button" role="tab" aria-controls="contour-delivery" aria-selected="false">Доставка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contour-care-tab" data-bs-toggle="tab" data-bs-target="#contour-care" type="button" role="tab" aria-controls="contour-care" aria-selected="false">Уход</button>
+          </li>
+        </ul>
+        <div class="tab-content panel p-3 p-md-4">
+          <div class="tab-pane fade show active" id="contour-desc" role="tabpanel" aria-labelledby="contour-desc-tab" tabindex="0">
+            <p class="mb-0">Каркас стоит без оболочки. Сквозь него видна полка, и это честнее, чем притворяться, что внутри что-то есть.</p>
+          </div>
+          <div class="tab-pane fade" id="contour-delivery" role="tabpanel" aria-labelledby="contour-delivery-tab" tabindex="0">
+            <p class="mb-0">Доставка по городу занимает 2–4 дня. Упаковка глухая: курьер не обязан знать, что внутри. Сама бипка в коробку не помещается, потому что её нет. Внутри только фигурка «Контур без тела».</p>
+          </div>
+          <div class="tab-pane fade" id="contour-care" role="tabpanel" aria-labelledby="contour-care-tab" tabindex="0">
+            <p class="mb-0">Сухая ткань, без растворителей. Не стоит добиваться от фигурки узнаваемого образа: если он появится, это уже другая вещь.</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-striped align-middle mb-0">
+            <caption>Характеристики фигурки «Контур без тела»</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">Высота каркаса</th><td>20 см</td></tr>
+                <tr><th scope="row">Масса</th><td>210 г</td></tr>
+                <tr><th scope="row">Материал</th><td>полимерный прут</td></tr>
+                <tr><th scope="row">Партия</th><td>12 штук</td></tr>
+                <tr><th scope="row">Оболочка</th><td>не отливалась</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+        </div>
+        <section class="mt-5">
+          <h2 class="h3 mb-4">Другие попытки</h2>
+          <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#zero">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/zero.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Нулевой объём</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#edge">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/edge.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Ребро без грани</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#fold">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/fold.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Складка тишины</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#torus">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/torus.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Невозможный тор</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#point">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/point.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Точка снаружи</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#void">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/void.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Гладкая пустота</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#angle">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/angle.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Угол, которого нет</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a class="related-link" href="product.html#contour">
+              <article class="card product-card h-100">
+                <div class="figure-frame">
+                  <img src="images/contour.svg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="h6 card-title mb-0">Контур без тела</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-5">
+          <p class="fw-bold mb-1">Бипки</p>
+          <p class="text-secondary mb-0">Фигурки объекта, которого нет.</p>
+        </div>
+        <div class="col-md-7">
+          <ul class="nav justify-content-md-end">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Фигурка</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О бипке</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form class="order-form" action="order.html" method="post">
+            
+            <div class="mb-3">
+              <label class="form-label" for="modal-name">Имя</label>
+              <input class="form-control" id="modal-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-email">Почта</label>
+              <input class="form-control" id="modal-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-phone">Телефон</label>
+              <div class="input-group">
+                <span class="input-group-text" id="modal-phone-prefix">+7</span>
+                <input class="form-control" id="modal-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="modal-phone-prefix" required placeholder="9000000000">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-product">Фигурка</label>
+              <select class="form-select" id="modal-product" name="product" required>
+                <option value="">Выберите фигурку</option>
+                <option value="zero">Нулевой объём</option>
+                <option value="edge">Ребро без грани</option>
+                <option value="fold">Складка тишины</option>
+                <option value="torus">Невозможный тор</option>
+                <option value="point">Точка снаружи</option>
+                <option value="void">Гладкая пустота</option>
+                <option value="angle">Угол, которого нет</option>
+                <option value="contour">Контур без тела</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-comment">Комментарий</label>
+              <textarea class="form-control" id="modal-comment" name="comment" rows="4" required placeholder="Что вы хотите получить, если сами этого не знаете"></textarea>
+            </div>
+            <div class="form-check mb-4">
+              <input class="form-check-input" id="modal-consent" name="consent" type="checkbox" value="yes" required>
+              <label class="form-check-label" for="modal-consent">Согласен на обработку данных. Сами данные тоже ничего не объясняют.</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast" id="orderToast" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="5000">
+      <div class="toast-header">
+        <strong class="me-auto">Бипки</strong>
+        <button class="btn-close" type="button" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body" id="orderToastText">Заявка принята.</div>
+    </div>
+  </div>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог абстрактных фигурок: пустые, замкнутые и рёбра. Карточки, цены и бейджи.">
+  <meta name="theme-color" content="#07110c">
+  <title>Каталог — Бипки</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#content">К содержанию</a>
+  <header>
+    <nav class="navbar navbar-expand-xl site-nav sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/mark.svg" width="32" height="32" alt="">
+          <span>Бипки</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNav">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link active" href="catalog.html" aria-current="page">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Фигурка</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О бипке</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="py-5">
+      <div class="container">
+        <nav aria-label="Хлебные крошки">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+        <h1 class="display-5 mb-3">Каталог попыток</h1>
+        <p class="hero-lead mb-4">Восемь фигурок. Ни одна не является бипкой. Фильтр делит витрину условно: на пустые, замкнутые и рёбра.</p>
+        <div class="row gx-4 gy-4">
+          <aside class="col-12 col-lg-3">
+            <div class="filter-panel">
+              <h2 class="h6 text-secondary">Категория</h2>
+              <div class="d-grid gap-2" role="group" aria-label="Фильтр каталога">
+                <button class="btn btn-outline-primary active" type="button" data-filter="all" aria-pressed="true">Все</button>
+                <button class="btn btn-outline-primary" type="button" data-filter="empty" aria-pressed="false">Пустые</button>
+                <button class="btn btn-outline-primary" type="button" data-filter="closed" aria-pressed="false">Замкнутые</button>
+                <button class="btn btn-outline-primary" type="button" data-filter="edges" aria-pressed="false">Рёбра</button>
+              </div>
+            </div>
+          </aside>
+          <div class="col-12 col-lg-9">
+            <div class="alert alert-warning d-none" id="catalogEmpty" role="alert">В этой категории пусто. Для бипки это слишком буквально, выберите другой фильтр.</div>
+            <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="empty">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/zero.svg" alt="Нулевой объём">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-success">Хит</span></div>
+              <h3 class="card-title h5">Нулевой объём</h3>
+              <p class="card-text text-secondary flex-grow-1">Оболочка, у которой нет внутреннего объёма. Ноль в характеристиках — не ошибка склада.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">4 900 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#zero">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=zero">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="edges">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/edge.svg" alt="Ребро без грани">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-warning">Новинка</span></div>
+              <h3 class="card-title h5">Ребро без грани</h3>
+              <p class="card-text text-secondary flex-grow-1">Одно ребро. Граней, к которым оно должно крепиться, в комплекте нет.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">3 200 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#edge">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=edge">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="closed">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/fold.svg" alt="Складка тишины">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-danger">Скидка</span></div>
+              <h3 class="card-title h5">Складка тишины</h3>
+              <p class="card-text text-secondary flex-grow-1">Поверхность сложена так, что с неё не считывается ни форма, ни звук.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">2 700 ₽</span> <span class="text-decoration-line-through text-secondary ms-2">3 400 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#fold">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=fold">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="closed">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/torus.svg" alt="Невозможный тор">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-info">Редкость</span></div>
+              <h3 class="card-title h5">Невозможный тор</h3>
+              <p class="card-text text-secondary flex-grow-1">Кольцо проходит сквозь собственное отверстие и не замечает этого.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">5 600 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#torus">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=torus">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="empty">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/point.svg" alt="Точка снаружи">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"></div>
+              <h3 class="card-title h5">Точка снаружи</h3>
+              <p class="card-text text-secondary flex-grow-1">Точка относится к фигуре и лежит за её пределами.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">1 800 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#point">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=point">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="empty">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/void.svg" alt="Гладкая пустота">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-success">Хит</span></div>
+              <h3 class="card-title h5">Гладкая пустота</h3>
+              <p class="card-text text-secondary flex-grow-1">Ни ребра, ни шва. Ладонь соскальзывает, взгляд тоже.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">6 100 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#void">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=void">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="edges">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/angle.svg" alt="Угол, которого нет">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-warning">Новинка</span></div>
+              <h3 class="card-title h5">Угол, которого нет</h3>
+              <p class="card-text text-secondary flex-grow-1">Три плоскости идут к одной точке и разминулись.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">4 100 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#angle">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=angle">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4" data-category="edges">
+          <article class="card product-card h-100">
+            <div class="figure-frame">
+              <img src="images/contour.svg" alt="Контур без тела">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"></div>
+              <h3 class="card-title h5">Контур без тела</h3>
+              <p class="card-text text-secondary flex-grow-1">Линия обводит предмет, который не стали заполнять.</p>
+              <p class="mb-3"><span class="fw-bold text-primary">2 400 ₽</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="product.html#contour">Подробнее</a>
+                <a class="btn btn-outline-primary btn-sm" href="order.html?product=contour">Заявка</a>
+              </div>
+            </div>
+          </article>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-5">
+          <p class="fw-bold mb-1">Бипки</p>
+          <p class="text-secondary mb-0">Фигурки объекта, которого нет.</p>
+        </div>
+        <div class="col-md-7">
+          <ul class="nav justify-content-md-end">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Фигурка</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О бипке</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form class="order-form" action="order.html" method="post">
+            
+            <div class="mb-3">
+              <label class="form-label" for="modal-name">Имя</label>
+              <input class="form-control" id="modal-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-email">Почта</label>
+              <input class="form-control" id="modal-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-phone">Телефон</label>
+              <div class="input-group">
+                <span class="input-group-text" id="modal-phone-prefix">+7</span>
+                <input class="form-control" id="modal-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="modal-phone-prefix" required placeholder="9000000000">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-product">Фигурка</label>
+              <select class="form-select" id="modal-product" name="product" required>
+                <option value="">Выберите фигурку</option>
+                <option value="zero">Нулевой объём</option>
+                <option value="edge">Ребро без грани</option>
+                <option value="fold">Складка тишины</option>
+                <option value="torus">Невозможный тор</option>
+                <option value="point">Точка снаружи</option>
+                <option value="void">Гладкая пустота</option>
+                <option value="angle">Угол, которого нет</option>
+                <option value="contour">Контур без тела</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-comment">Комментарий</label>
+              <textarea class="form-control" id="modal-comment" name="comment" rows="4" required placeholder="Что вы хотите получить, если сами этого не знаете"></textarea>
+            </div>
+            <div class="form-check mb-4">
+              <input class="form-check-input" id="modal-consent" name="consent" type="checkbox" value="yes" required>
+              <label class="form-check-label" for="modal-consent">Согласен на обработку данных. Сами данные тоже ничего не объясняют.</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast" id="orderToast" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="5000">
+      <div class="toast-header">
+        <strong class="me-auto">Бипки</strong>
+        <button class="btn-close" type="button" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body" id="orderToastText">Заявка принята.</div>
+    </div>
+  </div>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

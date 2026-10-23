@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Учебные контакты мастерской «Бипки» и форма сообщения.">
+  <meta name="theme-color" content="#07110c">
+  <title>Контакты — Бипки</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#content">К содержанию</a>
+  <header>
+    <nav class="navbar navbar-expand-xl site-nav sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/mark.svg" width="32" height="32" alt="">
+          <span>Бипки</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNav">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Фигурка</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О бипке</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacts.html" aria-current="page">Контакты</a></li>
+          </ul>
+          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="py-5">
+      <div class="container">
+        <nav aria-label="Хлебные крошки">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+          </ol>
+        </nav>
+        <h1 class="display-5 mb-3">Контакты мастерской</h1>
+        <div class="alert alert-warning" role="alert">Контакты учебные. Письмо с этой страницы никуда не уходит: форма только проверяет поля и показывает сообщение.</div>
+        <div class="row gx-4 gy-4">
+          <div class="col-12 col-lg-5">
+            <div class="panel p-4 mb-4">
+              <h2 class="h5">Как нас нет на карте</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3"><span class="text-secondary d-block">Мастерская</span>Бипки, двор без номера</li>
+                <li class="mb-3"><span class="text-secondary d-block">Почта</span>hello@bipki.shop</li>
+                <li class="mb-3"><span class="text-secondary d-block">Телефон</span>+7 900 000-00-11</li>
+                <li><span class="text-secondary d-block">Часы</span>Ежедневно, если кто-то помнит, что магазин открыт</li>
+              </ul>
+            </div>
+            <a class="btn btn-outline-primary" href="order.html">Сразу к заявке на фигурку</a>
+          </div>
+          <div class="col-12 col-lg-7">
+            <form class="order-form panel p-4" action="contacts.html" method="post">
+              <h2 class="h5 mb-3">Написать в мастерскую</h2>
+              <div class="mb-3">
+                <label class="form-label" for="contact-name">Имя</label>
+                <input class="form-control" id="contact-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="contact-email">Почта</label>
+                <input class="form-control" id="contact-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="contact-phone">Телефон</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="contact-phone-prefix">+7</span>
+                  <input class="form-control" id="contact-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="contact-phone-prefix" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="contact-topic">Тема</label>
+                <select class="form-select" id="contact-topic" name="topic" required>
+                  <option value="">Выберите тему</option>
+                  <option value="figure">Вопрос о фигурке</option>
+                  <option value="work">Сотрудничество</option>
+                  <option value="none">Ничего конкретного</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="contact-comment">Комментарий</label>
+                <textarea class="form-control" id="contact-comment" name="comment" rows="4" required></textarea>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" id="contact-consent" name="consent" type="checkbox" value="yes" required>
+                <label class="form-check-label" for="contact-consent">Согласен на обработку данных.</label>
+              </div>
+              <button class="btn btn-primary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-5">
+          <p class="fw-bold mb-1">Бипки</p>
+          <p class="text-secondary mb-0">Фигурки объекта, которого нет.</p>
+        </div>
+        <div class="col-md-7">
+          <ul class="nav justify-content-md-end">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Фигурка</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О бипке</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form class="order-form" action="order.html" method="post">
+            
+            <div class="mb-3">
+              <label class="form-label" for="modal-name">Имя</label>
+              <input class="form-control" id="modal-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-email">Почта</label>
+              <input class="form-control" id="modal-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-phone">Телефон</label>
+              <div class="input-group">
+                <span class="input-group-text" id="modal-phone-prefix">+7</span>
+                <input class="form-control" id="modal-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="modal-phone-prefix" required placeholder="9000000000">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-product">Фигурка</label>
+              <select class="form-select" id="modal-product" name="product" required>
+                <option value="">Выберите фигурку</option>
+                <option value="zero">Нулевой объём</option>
+                <option value="edge">Ребро без грани</option>
+                <option value="fold">Складка тишины</option>
+                <option value="torus">Невозможный тор</option>
+                <option value="point">Точка снаружи</option>
+                <option value="void">Гладкая пустота</option>
+                <option value="angle">Угол, которого нет</option>
+                <option value="contour">Контур без тела</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modal-comment">Комментарий</label>
+              <textarea class="form-control" id="modal-comment" name="comment" rows="4" required placeholder="Что вы хотите получить, если сами этого не знаете"></textarea>
+            </div>
+            <div class="form-check mb-4">
+              <input class="form-check-input" id="modal-consent" name="consent" type="checkbox" value="yes" required>
+              <label class="form-check-label" for="modal-consent">Согласен на обработку данных. Сами данные тоже ничего не объясняют.</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast" id="orderToast" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="5000">
+      <div class="toast-header">
+        <strong class="me-auto">Бипки</strong>
+        <button class="btn-close" type="button" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body" id="orderToastText">Заявка принята.</div>
+    </div>
+  </div>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

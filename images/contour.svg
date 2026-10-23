@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#e4ff8a"/>
+      <stop offset="38%" stop-color="#1c9a4a"/>
+      <stop offset="100%" stop-color="#07110c"/>
+    </radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaff9a"/>
+      <stop offset="45%" stop-color="#3dff9a"/>
+      <stop offset="100%" stop-color="#0c3d22"/>
+    </linearGradient>
+    <linearGradient id="face-b" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c6ff4a"/>
+      <stop offset="100%" stop-color="#08331c"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="7"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.78  0 0 0 0 1  0 0 0 0 0.32  0 0 0 0.45 0"/>
+    </filter>
+  </defs>
+  <rect width="640" height="480" fill="#050a07"/>
+  <ellipse cx="320" cy="400" rx="150" ry="22" fill="#031208" opacity="0.85"/>
+  
+  <g fill="none" stroke="#c6ff4a" stroke-width="3" filter="url(#soft)">
+    <polygon points="320,60 470,150 470,290 320,390 170,290 170,150"/>
+    <polygon points="320,140 400,190 400,270 320,320 240,270 240,190"/>
+    <path d="M320 60 L320 140 M470 150 L400 190 M470 290 L400 270 M320 390 L320 320 M170 290 L240 270 M170 150 L240 190"/>
+    <path d="M240 190 L400 270 M400 190 L240 270 M320 140 L320 320" stroke="#3dff9a"/>
+  </g>
+
+  <rect width="640" height="480" filter="url(#grain)" opacity="0.35"/>
+</svg>
