@@ -1,1 +1,1 @@
-# kr2-bootstrap-shop
+# kr2-bipki-shop
